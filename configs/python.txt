@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <system.webServer>
+    <handlers>
+      <add name="PythonHandler" path="*" verb="*" modules="httpPlatformHandler" scriptProcessor="C:\Users\Administrator\AppData\Local\Programs\Python\Python311\python.exe" resourceType="Unspecified" requireAccess="Script" />
+    </handlers>
+    <httpPlatform processPath="C:\Users\Administrator\AppData\Local\Programs\Python\Python311\python.exe" arguments="-m uvicorn main:app --host 0.0.0.0 --port %HTTP_PLATFORM_PORT%" stdoutLogEnabled="true" stdoutLogFile="C:\Inetpub\vhosts\mssplonline.com\ehrmpythonapi.mssplonline.com\logs">
+      <environmentVariables />
+    </httpPlatform>
+  </system.webServer>
+  <system.web>
+    <compilation tempDirectory="C:\Inetpub\vhosts\mssplonline.com\tmp" />
+  </system.web>
+</configuration>

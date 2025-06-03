@@ -1,0 +1,13 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.npm
+.eslintcache
+.node_repl_history
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+/dist
